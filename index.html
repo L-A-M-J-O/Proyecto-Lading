@@ -62,7 +62,7 @@
                 </div>
             </nav>
         </header>
-        <main>
+        <div>
             <div class="container-fluid section-banner">
                 <div class="row banner">
                     <div class="col-xs-12 col-sm-12 col-md-4 p-0">
@@ -133,7 +133,7 @@
                             <h4>Inspírate</h4>  
                         </div>
                     </div>
-                    <div class="row justify-content-evenly box-cards">
+                    <!-- <div class="row justify-content-evenly box-cards">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-xl-4">
                             <div class="box-card mb-3">
                                 <div class="row g-0">
@@ -148,7 +148,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div > 
+                    </div>
                     <div class="col-xs-12 col-sm-12 col-md-12 col-xl-4">
                         <div class="box-card mb-3">
                             <div class="row g-0">
@@ -169,6 +169,81 @@
                         <div class="col-1">
                             <button type="button" class="ver-button">Ver todos</button>
                         </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="container-fluid heavy-box-cards">
+                <div dir="rtl" class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="box-card mb-3">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="/assets/img/image 6.png" class="img-fluid rounded-start" alt="figure">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body w-75 text-start  me-4">
+                                            <hr>
+                                            <p class="card-title">Título para el artículo destacado en la sección Inspírate</p> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="box-card mb-3">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="/assets/img/image 8.png" class="img-fluid rounded-start" alt="figure">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body w-75 text-start  me-4">
+                                            <hr>
+                                            <p class="card-text">Título para el artículo destacado en la sección Inspírate</p> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="box-card mb-3">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="/assets/img/image 6.png" class="img-fluid rounded-start" alt="figure">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body w-75 text-start  me-4">
+                                            <hr>
+                                            <p class="card-title">Título para el artículo destacado en la sección Inspírate</p> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="box-card mb-3">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="/assets/img/image 8.png" class="img-fluid rounded-start" alt="figure">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body w-75 text-start  me-4">
+                                            <hr>
+                                            <p class="card-title">Título para el artículo destacado en la sección Inspírate</p> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="row justify-content-center box-button-slide w-100">
+                <div class="col-auto">
+                    <button type="button" class="ver-button">Ver todos</button>
                     </div>
                 </div>
             </div>
@@ -257,5 +332,13 @@
         <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
         <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
         <script src="./assets/styles/javascript/main.js"></script>
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+            });
+          </script>
     </body>
 </html>

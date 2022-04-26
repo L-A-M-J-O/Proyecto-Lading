@@ -194,7 +194,8 @@ header .box-button-icon {
 }
 
 .box-button-slide {
-  margin-top: 100px;
+  width: 100px;
+  margin-left: 0px;
   margin-bottom: 50px;
 }
 
@@ -290,5 +291,38 @@ footer h5 {
 
 footer .a-form {
   margin-top: 18px;
+}
+
+.heavy-box-cards {
+  position: relative;
+  height: 600px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=styles.css.map */
