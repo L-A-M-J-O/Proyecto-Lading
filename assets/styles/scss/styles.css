@@ -1,62 +1,143 @@
-body {
+* {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
+body {
+  font-family: sans-serif;
+}
+
+@media (min-width: 0px) {
+  .slide-tittle {
+    font-size: 10px;
+  }
+  .box-button {
+    margin-left: 70px;
+  }
+}
+
+@media (min-width: 576px) {
+  .box-button {
+    margin-left: 200px;
+  }
+}
+
+@media (min-width: 768px) {
+  .box-button {
+    margin-left: 300px;
+  }
+}
+
+@media (min-width: 992px) {
+  .box-button {
+    margin-left: 0;
+  }
+  button {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .box-button {
+    margin-left: 40px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .box-button {
+    margin-bottom: 5px;
+  }
+}
+
 .advertising-header {
-  height: 36px;
   background-color: black;
 }
 
 .advertising-header .text {
   font-size: 14px;
-  margin-top: 5px;
   color: white;
   text-align: center;
 }
 
-header .nav-brand-image {
-  padding: 5px;
-  margin: 0px 10px 0px 20px;
-}
-
-header .a-color {
-  color: #8B2321;
-}
-
-header .icon-search {
-  margin-top: 8px;
-  margin-left: 25px;
-}
-
-header .icon-cart {
-  margin-top: 6px;
-  margin-left: 15px;
-}
-
-header .icon-person {
-  margin-top: 7px;
-  margin-left: 15px;
-}
-
-.section-banner {
-  height: 217px;
-}
-
-.section-banner .box {
-  height: 100%;
-  width: 470px;
-}
-
-.section-banner .box-1 {
-  height: 216px;
-  width: 900;
-}
-
-.section-banner .box-image {
+header .icon-nav {
   width: 100%;
+}
+
+header .box-button-icon {
+  width: 48px;
+  height: 45px;
+}
+
+.section-banner .fila {
   height: 100%;
+  background-color: blueviolet;
+  border: 2px solid;
+}
+
+.section-banner .fila .image {
+  width: 100px;
+}
+
+.section-terms {
+  height: 270px;
+  background-color: #F1F1F1;
+}
+
+.section-terms .box-terms .box-terms-txt {
+  margin-top: 20px;
+  width: 601px;
+}
+
+.banner-slide .box-slide h1 {
+  color: #F0F0F0;
+  margin-top: 70px;
+  font-size: 87px;
+  font-family: Rozha One;
+  line-height: 30px;
+}
+
+.box-cards {
+  margin-top: 100px;
+}
+
+.box-cards .box-card {
+  width: 580px;
+}
+
+.box-button-slide {
+  margin-top: 100px;
+}
+
+.box-button-slide .ver-button {
+  width: 110px;
+  height: 40px;
+  border-radius: 15px;
+}
+
+.box-card-event h1 {
+  margin-top: 70px;
+  font-family: Rozha One;
+  font-size: 98px;
+  color: #DEDEDE;
+  line-height: 30px;
+}
+
+.box-card-event h4 {
+  font-family: Titillium Web;
+  font-size: 28px;
+}
+
+.box-paragrach-event {
+  margin-top: 200px;
+}
+
+.box-paragrach-event p {
+  font-size: 28px;
+  font-family: Rozha One;
+  line-height: 28px;
+  font-weight: 400;
 }
 /*# sourceMappingURL=styles.css.map */
