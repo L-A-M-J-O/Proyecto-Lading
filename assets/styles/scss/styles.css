@@ -9,28 +9,18 @@ body {
   font-family: sans-serif;
 }
 
-@media (min-widt3h: 0px) {
+@media (min-width: 0px) {
+  .tittle-banner {
+    font-size: 34px;
+  }
   .box-button {
     margin-left: 70px;
   }
   .box-tittle-form {
     width: 300px;
   }
-  .box-img-form {
-    padding: 0;
-    margin-left: 30px;
-  }
   .tittle-event {
     font-size: 50px;
-  }
-}
-
-@media (min-width: 576px) {
-  .tittle-event {
-    font-size: 80px;
-  }
-  .box-button-nav {
-    margin-left: 200px;
   }
 }
 
@@ -70,6 +60,9 @@ body {
 }
 
 @media (min-width: 1400px) {
+  .tittle-banner {
+    font-size: 56px;
+  }
   .box-img-form {
     margin-top: 90px;
     margin-left: 0px;
@@ -99,29 +92,53 @@ header .box-button-icon {
 }
 
 .section-banner .box-image {
-  background-image: url(/assets/img/MaskGrou.png);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(104, 8, 8, 0.842))), url(/assets/img/MaskGrou.png);
+  background: linear-gradient(rgba(104, 8, 8, 0.842)), url(/assets/img/MaskGrou.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.section-banner .box-image::after {
-  content: "";
-  background-color: #800E0C;
-  width: 100%;
-  height: 225px;
-  position: absolute;
-  opacity: 0.5;
-  left: 33%;
-  top: 13%;
-  opacity: 0.8;
+.section-banner .box-image p {
+  color: #FFFF;
+  font-size: 14px;
+  font-family: Rozha One;
+  line-height: 19px;
+  font-weight: 400;
 }
 
-.section-banner .img1 {
+.section-banner .box-image h1 {
+  font-style: normal;
+  font-family: Rozha One;
+  font-weight: 400;
+  line-height: 38px;
+  color: #FFFF;
+}
+
+.section-banner .box-image .banner-productos {
+  position: relative;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFF;
+}
+
+.section-banner .box-image .banner-productos::after {
+  content: "";
+  position: absolute;
+  display: block;
+  margin-top: 5px;
+  width: 152px;
+  height: 2px;
+  background-color: #FFFF;
+}
+
+.img1 {
   width: 100%;
   height: 100%;
 }
 
-.section-banner .img2 {
+.img2 {
   position: relative;
   width: 100%;
   height: 100%;
@@ -178,6 +195,7 @@ header .box-button-icon {
 
 .box-button-slide {
   margin-top: 100px;
+  margin-bottom: 50px;
 }
 
 .box-button-slide .ver-button {
@@ -233,8 +251,8 @@ header .box-button-icon {
 }
 
 .section-event {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 7, 12, 0.75))), url(/assets/img/image.png);
-  background: linear-gradient(rgba(5, 7, 12, 0.75)), url(/assets/img/image.png);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 7, 12, 0.699))), url(/assets/img/image.png);
+  background: linear-gradient(rgba(5, 7, 12, 0.699)), url(/assets/img/image.png);
   background-repeat: none;
   background-size: cover;
 }

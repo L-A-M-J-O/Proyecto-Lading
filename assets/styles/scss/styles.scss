@@ -9,18 +9,18 @@ body {
 
 }
 
-@media (min-widt3h: 0px) {
+@media (min-width: 0px) {
+
+    .tittle-banner{
+        font-size: 34px;
+    }
+
     .box-button {
         margin-left: 70px;
     }
 
     .box-tittle-form {
         width: 300px;
-    }
-
-    .box-img-form {
-        padding: 0;
-        margin-left: 30px;
     }
 
     .tittle-event{
@@ -35,12 +35,6 @@ body {
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
 
-    .tittle-event{
-        font-size: 80px;
-    }
-    .box-button-nav {
-         margin-left: 200px;
-    }
 }
 
 // Medium devices (tablets, 768px and up)
@@ -83,7 +77,10 @@ body {
 }
 
 // XX-Large devices (larger desktops, 1400px and up)
-@media (min-width: 1400px) {
+@media (min-width: 1400px) { 
+    .tittle-banner {
+        font-size: 56px;
+    }
     .box-img-form {
         margin-top: 90px;
         margin-left: 0px;
@@ -116,24 +113,46 @@ header {
 }
 .section-banner {
     .box-image {
-        background-image: url(/assets/img/MaskGrou.png);
+        background: linear-gradient(rgba(104, 8, 8, 0.842)), url(/assets/img/MaskGrou.png);
         background-repeat: no-repeat;
         background-size: cover;
-    }
-    .box-image::after {
-        content: "";
-        background-color: #800E0C;
-        width: 100%;
-        height: 225px;
-        position: absolute;
-        opacity: 0.5;
-        left: 33%;
-        top: 13%;
-        opacity: 0.8;
 
-    }
+        
+        p {
+            color: #FFFF;
+            font-size: 14px;
+            font-family: Rozha One;
+            line-height: 19px;
+            font-weight: 400;
+        }
 
-     
+        h1 {
+            font-style: normal;
+            font-family: Rozha One;
+            font-weight: 400;
+            line-height: 38px;
+            color: #FFFF;
+        }
+
+        .banner-productos {
+            position: relative;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #FFFF;
+            }
+        .banner-productos::after {
+            content: "";
+            position: absolute;
+            display: block;
+            margin-top: 5px;
+            width: 152px;
+            height: 2px;
+            background-color: #FFFF;
+            }
+        }
+    }
     .img1 {
         width: 100%;
         height: 100%;
@@ -143,8 +162,6 @@ header {
         width: 100%;
         height: 100%;
     }
-
-}
 .section-terms { 
     height: 270px;
     background-color: #F1F1F1;
@@ -202,6 +219,7 @@ header {
 }
 .box-button-slide {
     margin-top: 100px;
+    margin-bottom: 50px;
     .ver-button {
         width: 110px;
         height: 40px;
@@ -253,7 +271,7 @@ header {
     }
 } 
 .section-event {
-    background: linear-gradient(rgba(5,7,12, 0.75)), url(/assets/img/image.png);
+    background: linear-gradient(rgba(5, 7, 12, 0.699)), url(/assets/img/image.png);
     background-repeat: none;
     background-size: cover;
 }
