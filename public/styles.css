@@ -92,8 +92,8 @@ header .box-button-icon {
 }
 
 .section-banner .box-image {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(104, 8, 8, 0.842))), url(/assets/img/MaskGrou.png);
-  background: linear-gradient(rgba(104, 8, 8, 0.842)), url(/assets/img/MaskGrou.png);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(104, 8, 8, 0.842))), url(./img/MaskGrou.png);
+  background: linear-gradient(rgba(104, 8, 8, 0.842)), url(./img/MaskGrou.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -252,8 +252,8 @@ header .box-button-icon {
 }
 
 .section-event {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 7, 12, 0.699))), url(/assets/img/image.png);
-  background: linear-gradient(rgba(5, 7, 12, 0.699)), url(/assets/img/image.png);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 7, 12, 0.699))), url(./img/image.png);
+  background: linear-gradient(rgba(5, 7, 12, 0.699)), url(./img/image.png);
   background-repeat: none;
   background-size: cover;
 }

@@ -1,89 +1,344 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.8.1/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.8.1/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/9.8.1/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/9.8.1/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/9.8.1/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/9.8.1/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/9.8.1/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/9.8.1/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/9.8.1/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.8.1/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+        <title>Lading</title>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+    </head>
+    </body>
+        <header>
+            <div class="container-fluid advertising-header">
+                <p class="text">20% de descuento en nuestra grifería por compras en nuestra plataforma online</p>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><img src="./img/logo-la-cuisine 1.png" width="222"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto text-center box-lista">
+                        <li class="nav-item">
+                            <a class="nav-link text-black" aria-current="page" href="#">MESA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color:#8B2321;" href="#">ELECTRODOMÉSTICOS PEQUEÑOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black" href="#">ELECTRODOMÉSTICOS GRANDES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black" href="#">BBQ & OUTDOOR</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black" href="#">NUESTRAS MARCAS</a>
+                        </li>
+                    </ul>
+                    <div class="box-button">
+                        <button type="button" class="btn btn-outline-light box-button-icon">
+                            <a class="navbar-brand" href="#">
+                                <img src="./img/cart-add.png" alt="icon" class="icon-nav">
+                            </a>
+                          </button>
+                          <button type="button" class="btn btn-outline-light box-button-icon">
+                            <a class="navbar-brand" href="#">
+                                <img src="./img/search.png" alt="icon" class="icon-nav">
+                            </a>
+                          </button>
+                          <button type="button" class="btn btn-outline-light box-button-icon">
+                            <a class="navbar-brand" href="#">
+                            <img src="./img/person.png" alt="icon" class="icon-nav">
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div>
+            <div class="container-fluid section-banner mt-5">
+                <div class="row banner">
+                    <div class="col-xs-12 col-sm-12 col-md-4 p-0">
+                        <img class="img1" src="./img/Mask Group.png" alt="banner2">
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-8 p-0 box-image">
+                        <div class="container-fluid">
+                            <div class="row box-p-image">
+                                <div class="col-4 mt-3"><p>Electrodomésticos grandes</p></div>
+                            </div>
+                            <div class="row  mt-3 box-tittle-image">
+                                <div class="col-12 text-center"><h1 class="tittle-banner">¡Llegó la Navidad! <br>Y los regalos no se hacen esperar</h1></div>
+                            </div>
+                            <div class="row justify-content-center box-banner-productos">
+                                <div class="col-12 mb-5">
+                                    <div class="row justify-content-center">
+                                        <div class="col-auto mt-3">
+                                            <h6 class="banner-productos">Ver productos</h6>
+                                        </div>
+                                        <div class="col-auto mt-3">
+                                            <img src="./img/arrow-right1.png" class="arrow-terms">
+                                        </div>  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>  
+            </div>      
+            <div class="container-fluid section-terms">
+                <div class="row justify-content-center box-terms">
+                    <div class="col-4 box-terms-txt">
+                        <div class="row justify-content-center box-txt">
+                            <div class="col-md-4 tittle-terms">
+                                <h2>Newsletter</h2>
+                            </div>
+                            <div class="col-12 mt-3 paragraph-terms">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                            </div>
+                            <div class="col-12 mt-4 commentary-terms">
+                                <form>
+                                    <input type="text" class="input-group">
+                                </form>
+                            </div>
+                            <div class="col-1 mt-2 checkbox-terms">
+                                <form>
+                                    <input type="checkbox">
+                                </form>
+                            </div>
+                            <div class="col-11 mt-2 terminos-terms">
+                                <a class="text-dark" href="#">Acepto <b>términos y condiciones</b></a>
+                            </div>
+                            <div class="col-auto col-sm-2 col-md-2 mt-3 suscribirse-terms">
+                                <h6 class="suscribirse">Suscribirse</h6>
+                            </div>
+                            <div class="col-auto col-sm-10 col-md-10 mt-3">
+                                <img src="./img/arrow-right.png" class="arrow-terms">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+            <div class="section-slide">
+                <div class="container-fluid banner-slide">
+                    <div class="row justify-content-center box-slide">
+                        <div class="col-xs-12 col-sm-12 col-md-4 text-center">
+                            <h1 class="slide-tittle">Get inspired</h1>
+                            <h4>Inspírate</h4>  
+                        </div>
+                    </div>
+                    <!-- <div class="row justify-content-evenly box-cards">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-xl-4">
+                            <div class="box-card mb-3">
+                                <div class="row g-0">
+                                <div class="col-md-8">
+                                    <div class="card-body w-75">
+                                        <hr>
+                                        <p class="card-title">Título para el artículo destacado en la sección Inspírate</p> 
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="/assets/img/image 6.png" class="img-fluid rounded-start" alt="figure">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-xl-4">
+                        <div class="box-card mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-8">
+                                    <div class="card-body w-75">
+                                        <hr>
+                                        <p class="card-title">Título para el artículo destacado en la sección Inspírate</p> 
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="/assets/img/image 8.png" class="img-fluid rounded-start" alt="figure">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="row justify-content-center box-button-slide">
+                        <div class="col-1">
+                            <button type="button" class="ver-button">Ver todos</button>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="container-fluid heavy-box-cards">
+                <div dir="rtl" class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="box-card mb-3">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="./img/image 6.png" class="img-fluid rounded-start" alt="figure">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body w-75 text-start  me-4">
+                                            <hr>
+                                            <p class="card-title">Título para el artículo destacado en la sección Inspírate</p> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="box-card mb-3">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="./img/image 8.png" class="img-fluid rounded-start" alt="figure">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body w-75 text-start  me-4">
+                                            <hr>
+                                            <p class="card-text">Título para el artículo destacado en la sección Inspírate</p> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="box-card mb-3">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="./img/image 6.png" class="img-fluid rounded-start" alt="figure">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body w-75 text-start  me-4">
+                                            <hr>
+                                            <p class="card-title">Título para el artículo destacado en la sección Inspírate</p> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="box-card mb-3">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="./img/image 8.png" class="img-fluid rounded-start" alt="figure">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body w-75 text-start  me-4">
+                                            <hr>
+                                            <p class="card-title">Título para el artículo destacado en la sección Inspírate</p> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="row justify-content-center box-button-slide w-100">
+                <div class="col-auto">
+                    <button type="button" class="ver-button">Ver todos</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid section-event">
+                <div class="row row-cols-1 justify-content-center box-card-event">
+                    <div class="col-xs-12 text-center text-white">
+                        <h1 class="tittle-event">Showroom</h1>
+                        <h4>Showroom</h4>
+                    </div>
+                </div>
+                <div class="row justify-content-center  box-paragrach-event">
+                    <div class="col-xs-12 col-sm-12 col-md-6 text-center text-white">
+                        <p class="card-text">Espacios llenos de Increíbles productos,<br>disfruta de las mejores marcas seleccionadas para ti.</p>
+                    </div>
+                </div>    
+                <div class="row justify-content-center box-showroom">
+                    <div class="col-12 mb-5">
+                        <div class="row justify-content-center">
+                            <div class="col-auto mt-3 Showroom-event">
+                                <h6 class="event-showroom">Ver Showroom</h6>
+                            </div>
+                            <div class="col-auto mt-3">
+                                <img src="./img/arrow-right1.png" class="arrow-terms">
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="bd-footer">
+            <div class="container py-5">
+              <div class="row">
+                <div class="col-lg-3 mb-3 box-img-form">
+                  <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/" aria-label="Bootstrap">
+                    <img src="./img/white-logo-cuisine 1.png" class="d-block me-2" alt="logo-footer">
+                  </a>
+                  <ul class="llist-unstyled small text-muted ms-5">
+                    <li class="mb-2 mt-3 "><a  class="text-decoration-none text-white"href="#">Siguenos en:</a></li>
+                    <li class="mb-2">
+                        <img src="./img/Icon awesome-facebook-f.png" class="facebook">  
+                        <img src="./img/Icon awesome-instagram.png" class="Instagram">  
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-6 col-lg-2 offset-lg-1 mb-3 box-tittle-form">
+                  <h5>SEDE BOGOTÁ</h5>
+                  <ul class="list-unstyled">
+                    <li class="mb-2"><img src="./img/Icon awesome-phone-alt.png"><a class=" text-decoration-none text-white a-form-icon" href="#"> (+571) 432.7408/7493</a></li>
+                    <hr class="bg-white">
+                    <li class="mb-2"><img src="./img/Icon ionic-ios-pin.png"><a class="text-decoration-none text-white a-form-icon" href="#"> Carrera 9 # 80-45 Local 1 Edificio Torre Escalar | Bogotá, Colombia</a></li>
+                    <hr class="bg-white">
+                  </ul>
+                  <ul class="list-unstyled box-lits-form">
+                    <h5>SEDE BARRANQUILLA</h5>
+                    <li class="mb-2"><img src="./img/Icon awesome-phone-alt.png"><a class=" text-decoration-none text-white a-form-icon" href="#">+57 317 4049230</a></li>
+                    <hr class="bg-white">
+                    <li class="mb-2"><img src="./img/Icon ionic-ios-pin.png"><a class=" text-decoration-none text-white a-form-icon" href="#">Calle 77 N 72-37Barranquilla.</a></li>
+                    <li class="mb-2"><img src="./img/Icon awesome-store.png"><a class=" text-decoration-none text-white a-form-icon" href="#">Horario de atención
+                        8:00am a 5:pm de Lunes a Sábado</a></li>
+                    <hr class="bg-white">
+                  </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3 tittle-form">
+                  <h5>La Cuisine</h5>
+                  <ul class="list-unstyled mt-2 ">
+                    <li class="mb-2 a-form"><a class=" text-decoration-none text-white" href="#">Tienda</a></li>
+                    <li class="mb-2 a-form"><a class=" text-decoration-none text-white" href="#">Nuestras marcas</a></li>
+                    <li class="mb-2 a-form"><a class=" text-decoration-none text-white" href="#">Inspírate</a></li>
+                    <li class="mb-2 a-form"><a class=" text-decoration-none text-white" href="#">Showroom</a></li>
+                    <li class="mb-2 a-form"><a class=" text-decoration-none text-white" href="#">Sobre La Cuisiner</a></li>
+                    <li class="mb-2 a-form"><a class=" text-decoration-none text-white" href="#">Contacto</a></li>
+                  </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3 tittle-form">
+                  <h5>Servicio al cliente</h5>
+                  <ul class="list-unstyled mt-2 ">
+                    <li class="mb-2 a-form"><a class=" text-decoration-none text-white" href="#">Preguntas frecuentes</a></li>
+                    <li class="mb-2 a-form"><a class=" text-decoration-none text-white" href="#">Servicio técnico</a></li>
+                    <li class="mb-2 a-form"><a class=" text-decoration-none text-white" href="#">Instalación</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script src="./assets/styles/javascript/main.js"></script>
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+            });
+          </script>
+    </body>
 </html>
